@@ -62,7 +62,39 @@ public class Estudiante extends Persona {
 
 	@Override
 	public String toString() {
-		return "--- Estudiante --- \nAños de Carrera=" + annoCarrera + "\nCarrera=" + carrera + "\nCarnet=" + carnet + "\nIdentificacion="
-				+ identificacion + "\nEdad=" + edad + "\n";
+		return "--- Estudiante --- \nannoCarrera=" + annoCarrera + "\ncarrera=" + carrera + "\ncarnet=" + carnet
+				+ "\nnombrePersona=" + nombrePersona + "\nidentificacion=" + identificacion + "\nedad=" + edad + "\n";
+	}
+
+	//************************** Metodos de Actor
+	@Override
+	public void actuar() {
+		System.out.println("Actuar Estudiante");
+	}
+
+	@Override
+	public void divertir() {
+		System.out.println("Divertir Estudiante");
+	}
+
+	@Override
+	public void desaparecer() {
+		System.out.println("Desaparecer Estudiante");
+	}
+
+	//************************** Metodos de Persona
+	@Override
+	public void saludar() {
+		System.out.println("Saludar Estudiante >> " + toString());
+	}
+
+	@Override
+	public void despedirse() {
+		System.out.println("Despedirse Estudiante");
+	}
+
+	@Override
+	public void comer() {
+		System.out.println("Comer Estudiante");
 	}
 }

@@ -70,7 +70,7 @@ public class Arbusto extends Vegetal implements Actor {
 	
 	@Override
 	public void mostrarse() {
-		super.mostrarse();
+		System.out.println("Aparecio Arbusto");
 	}
 	
 	@Override

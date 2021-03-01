@@ -48,14 +48,20 @@ public class Main {
 		
 		//Polimorfismo
 		System.out.println("\n************** Polimorfismo **************");
-		Persona profesor = new Estudiante("Marcela", 25, "123456789", 2, "Ingles", 123456789);
-		profesor.divertir();
+		Persona poliEstudiante = new Estudiante("Marcela", 25, "123456789", 2, "Ingles", 123456789);
+		Persona poliProfesor = new Profesor("Roberto", 29, "098765432", "roberto@ucreativa.com", 15, 234.56);
+		poliEstudiante.saludar();
+		poliProfesor.saludar();
 		
-		Vegetal poliVegetal = new Arbol("Manzana", "Fructifero", "Rojo", "Fruits", "Apple", 123.5);
-		poliVegetal.mostrarse();
+		Vegetal poliArbol = new Arbol("Manzana", "Fructifero", "Rojo", "Fruits", "Apple", 123.5);
+		Vegetal poliArbusto = new Arbusto("Laurel", "Arbusto", "Blanco", "Atributo 1", "Atributo 2", "Atributo 3");
+		poliArbol.mostrarse();
+		poliArbusto.mostrarse();
 		
-		Vehiculo poliVehiculo = new Bicicleta(3, 0, 1500000, "Triciclo", 20, "Negro");
-		poliVehiculo.actuar();
+		Vehiculo poliBici = new Bicicleta(3, 0, 1500000, "Triciclo", 20, "Negro");
+		Vehiculo poliCoche = new Coche(4, 7, 18500000, 2022, 2300, "4x4");
+		poliBici.pitar();
+		poliCoche.pitar();
 	}
 
 }

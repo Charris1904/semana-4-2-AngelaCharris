@@ -85,7 +85,7 @@ public class Vehiculo implements Actor, ObjetoInerte{
 	}
 	
 	public void pitar() {
-		System.out.println("Pitar Coche");
+		System.out.println("Pitar Vehiculo");
 	}
 	
 	@Override

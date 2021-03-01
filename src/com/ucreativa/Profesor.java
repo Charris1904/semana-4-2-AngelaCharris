@@ -62,7 +62,39 @@ public class Profesor extends Persona {
 
 	@Override
 	public String toString() {
-		return "--- Profesor --- \nCorreo=" + correo + "\nExperiencia=" + experiencia + "\nSalario=" + salario + "\nNombre Persona="
-				+ nombrePersona + "\nIdentificacion=" + identificacion + "\nEdad=" + edad + "\n";
+		return "--- Profesor --- \ncorreo=" + correo + "\nexperiencia=" + experiencia + "\nsalario=" + salario
+				+ "\nnombrePersona=" + nombrePersona + "\nidentificacion=" + identificacion + "\nedad=" + edad + "\n";
+	}
+
+	//************************** Metodos de Actor
+	@Override
+	public void actuar() {
+		System.out.println("Actuar Profesor");
+	}
+
+	@Override
+	public void divertir() {
+		System.out.println("Divertir Profesor");
+	}
+
+	@Override
+	public void desaparecer() {
+		System.out.println("Desaparecer Profesor");
+	}
+
+	//************************** Metodos de Persona
+	@Override
+	public void saludar() {
+		System.out.println("Saludar Profesor >> " + toString());
+	}
+
+	@Override
+	public void despedirse() {
+		System.out.println("Despedirse Profesor");
+	}
+
+	@Override
+	public void comer() {
+		System.out.println("Comer Profesor");
 	}
 }

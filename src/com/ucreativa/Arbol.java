@@ -127,5 +127,4 @@ public class Arbol extends Vegetal implements Actor {
 	public void metodoArbol3() {
 		System.out.println("Metodo 3 Arbol");
 	}
-	
 }

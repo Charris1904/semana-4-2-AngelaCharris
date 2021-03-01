@@ -62,4 +62,79 @@ public class Coche extends Vehiculo {
 		return "--- Coche --- \nModelo=" + modelo + "\nCilindrada=" + cilindrada + "\nTraccion=" + traccion + "\nNumero Llantas="
 				+ numeroLlantas + "\nNumero Puertas=" + numeroPuertas + "\nPrecio=" + precio + "\n";
 	}
+
+	@Override
+	public int getNumeroLlantas() {
+		return super.getNumeroLlantas();
+	}
+
+	@Override
+	public void setNumeroLlantas(int numeroLlantas) {
+		super.setNumeroLlantas(numeroLlantas);
+	}
+
+	@Override
+	public int getNumeroPuertas() {
+		return super.getNumeroPuertas();
+	}
+
+	@Override
+	public void setNumeroPuertas(int numeroPuertas) {
+		super.setNumeroPuertas(numeroPuertas);
+	}
+
+	@Override
+	public int getPrecio() {
+		return super.getPrecio();
+	}
+
+	@Override
+	public void setPrecio(int precio) {
+		super.setPrecio(precio);
+	}
+
+	@Override
+	public void actuar() {
+		super.actuar();
+	}
+
+	@Override
+	public void divertir() {
+		super.divertir();
+	}
+
+	@Override
+	public void desaparecer() {
+		super.desaparecer();
+	}
+
+	@Override
+	public void encender() {
+		super.encender();
+	}
+
+	@Override
+	public void apagar() {
+		super.apagar();
+	}
+
+	@Override
+	public void detener() {
+		super.detener();
+	}
+
+	@Override
+	public void girar() {
+		super.girar();
+	}
+
+	@Override
+	public void acelerar() {
+		super.acelerar();
+	}
+
+	@Override
+	public void pitar() {
+		System.out.println("Pitar Coche");
+	}
 }
